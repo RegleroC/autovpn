@@ -1,0 +1,8 @@
+sudo apt-get install openvpn
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt-get update
+sudo apt-get install golang-go
+sudo git clone https://github.com/adtac/autovpn
+cd autovpn
+sudo go build autovpn.go
+sudo ./autovpn US
